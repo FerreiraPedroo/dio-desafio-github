@@ -1,0 +1,130 @@
+:root{
+  --red: tomato;
+  --black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--black);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+header .logo{
+  color: var(--red);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+}
+header div h2 a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--red)
+}
+header nav a{
+  text-decoration: none;
+  color: silver;
+  margin: 10px;
+}
+header nav a:hover{
+  color:grey;
+}
+
+/* FILME PRINCIPAL*/
+.filme-principal{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) 100%), url("../img/background.jpg");
+
+  height: 600px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.filme-principal .container {
+  width: 50%;
+  margin: 40px;
+
+}
+.filme-principal .titulo{
+  font-size: 48px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin-bottom: 15px;
+}
+.filme-principal .descricao {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin-bottom: 40px;
+}
+.filme-principal .botao{
+  background-color: rgba(0,0,0,0.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: .5s ease all;
+}
+
+.filme-principal .botao:hover{
+  color: black;
+  background-color: white;
+}
+.filme-principal .botao i {
+  margin-right: 8px;
+}
+
+.carrosel-filmes{
+  margin: 40px 0px;
+}
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+}
+
+#player-modal{
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(0,0,0,0.85);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+#close-modal{
+  position: absolute;
+  top:10px;
+  width: 46px;
+  height: 46px;
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  border:0;
+
+  font-size: 20px;
+  font-weight: bolder;
+
+  cursor: pointer;
+  user-select: none;
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsividade.css">
+  <link rel="stylesheet" href="./assets/css/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
+  <title>Flix</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h2 class="logo"><a href="">BLOCKFLIX</a></h2>
+      <nav>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Documentário</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="filme-principal">
+      <div class="container">
+        <h3 class="titulo">A Era do Gelo: As Aventuras de Buck (2022)</h3>
+        <p class="descricao">As peripécias hilárias dos mamíferos pré-históricos favoritos de todo mundo continuam,
+          enquanto os gambás caçadores de emoções Crash e Eddie se juntam ao seu amigo caolho, aventureiro e caçador de
+          dinossauros, a doninha Buck Wild, para enfrentar os dinossauros rebeldes do Mundo Perdido.</p>
+        <div class="botoes">
+          <button role="button" class="botao" onclick="openModal()">
+            <i class="fas fa-play"></i>
+            ASSITIR TRAILER
+          </button>
+          <button role="button" class="botao">
+            <i class="fas fa-info-circle"></i>
+            MAIS INFORMAÇÕES</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="carrosel-filmes">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="./assets/img/bg1.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg2.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg3.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg4.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg5.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg6.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg7.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg8.jpg" class="box-filme" alt="">
+      </div>
+      <div class="item">
+        <img src="./assets/img/bg9.jpg" class="box-filme" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div id="player-modal">
+    <button id="close-modal" onclick="closeModal()">X</button>
+    <div id="player"></div>
+
+  </div>
+
+
+  </div>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+  <script src="assets/js/owl/jquery.min.js"></script>
+  <script src="assets/js/owl/owl.carousel.min.js"></script>
+  <script src="assets/js/owl/main.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
